@@ -29,26 +29,26 @@ init JLYTableView
 
 ```objc
 - (void)viewDidLoad {
-[super viewDidLoad];
-
-self.title = @"My AccountBook";
-self.view.backgroundColor = [UIColor whiteColor];
-
-CGFloat width = self.view.frame.size.width / 4;
-NSArray *widths = @[@(width), @(width), @(width), @(width)];
-NSString *plistFileName = @"dataSouce";
-NSArray *actions = @[@"printDate:", @"printTotalAssets:", sNoAction, sNoAction];
-NSArray *headerViewTitles = @[@"Date", @"TotalAssets", @"Profit&Loss", @"Rate"];
-CGFloat headerViewHeight = 24.0;
-
-JLYTableView *jlyTableView = [[JLYTableView alloc] initWithFrame:self.view.bounds
-widths:widths
-plistFile:plistFileName
-actions:actions
-headerViewTitles:headerViewTitles
-headerViewHeight:headerViewHeight
-delegate:self];
-[self.view addSubview:jlyTableView];
+    [super viewDidLoad];
+    
+    self.title = @"My AccountBook";
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    CGFloat width = self.view.frame.size.width / 4;
+    NSArray *widths = @[@(width), @(width), @(width), @(width)];
+    NSString *plistFileName = @"dataSouce";
+    NSArray *actions = @[@"printDate:", @"printTotalAssets:", sNoAction, sNoAction];
+    NSArray *headerViewTitles = @[@"Date", @"TotalAssets", @"Profit&Loss", @"Rate"];
+    CGFloat headerViewHeight = 24.0;
+    
+    JLYTableView *jlyTableView = [[JLYTableView alloc] initWithFrame:self.view.bounds
+                                                              widths:widths
+                                                           plistFile:plistFileName
+                                                             actions:actions
+                                                    headerViewTitles:headerViewTitles
+                                                    headerViewHeight:headerViewHeight
+                                                            delegate:self];
+    [self.view addSubview:jlyTableView];
 
 }
 ```
@@ -59,12 +59,12 @@ customize your own API for tap event of each cell
 ```objc
 - (void)printDate:(UIButton *)sender
 {
-NSLog(@"%@",sender.currentTitle);
+    NSLog(@"%@",sender.currentTitle);
 }
 
 - (void)printTotalAssets:(UIButton *)sender
 {
-NSLog(@"%@",sender.currentTitle);
+    NSLog(@"%@",sender.currentTitle);
 }
 
 ```
