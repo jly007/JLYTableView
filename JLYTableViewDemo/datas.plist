@@ -86,7 +86,7 @@
 		<key>Date</key>
 		<string>2015.06.09</string>
 		<key>TotalAssets</key>
-		<real>-100000</real>
+		<real>100000</real>
 		<key>ProfitAndLoss</key>
 		<real>-10000</real>
 		<key>Rate</key>
