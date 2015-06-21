@@ -12,7 +12,7 @@
 #import "JLYTableViewCell.h"
 #import "JLYTableViewGlobals.h"
 
-@interface ViewController ()
+@interface ViewController () <JLYTableViewDelegate>
 
 @end
 
@@ -20,26 +20,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-
+    
     self.title = @"My AccountBook";
     self.view.backgroundColor = [UIColor whiteColor];
     
-    float width = self.view.frame.size.width / 4;
+    CGFloat width = self.view.frame.size.width / 4;
     NSArray *widths = @[@(width), @(width), @(width), @(width)];
-    CGPoint startPoint = CGPointMake(0, 0);
+    NSString *plistFileName = @"dataSouce";
+    NSArray *actions = @[@"printDate:", @"printTotalAssets:", sNoAction, sNoAction];
+    NSArray *headerViewTitles = @[@"Date", @"TotalAssets", @"Profit&Loss", @"Rate"];
+    CGFloat headerViewHeight = 24.0;
     
-    JLYTableView *jlyTableView = [[JLYTableView alloc] initWithFrame:self.view.bounds];
-    [jlyTableView startWithWidths:widths
-                       startPoint:startPoint
-                        plistFile:@"datas"];
-    
-    NSArray *actions = @[sNoAction, @"printTotalAssets:", sNoAction, sNoAction];
-    [jlyTableView setActions:actions WithTarget:self];
-    
-    NSArray *titles = @[@"Date", @"TotalAssets", @"Profit&Loss", @"Rate"];
-    [jlyTableView setHeaderViewWithTitle:titles height:24];
-    
+    JLYTableView *jlyTableView = [[JLYTableView alloc] initWithFrame:self.view.bounds
+                                                              widths:widths
+                                                           plistFile:plistFileName
+                                                             actions:actions
+                                                    headerViewTitles:headerViewTitles
+                                                    headerViewHeight:headerViewHeight
+                                                            delegate:self];
     [self.view addSubview:jlyTableView];
 
 }
@@ -49,6 +47,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Private Methods
+
 - (void)printDate:(UIButton *)sender
 {
     NSLog(@"%@",sender.currentTitle);
@@ -57,6 +57,13 @@
 - (void)printTotalAssets:(UIButton *)sender
 {
     NSLog(@"%@",sender.currentTitle);
+}
+
+#pragma mark - JLYTableView Delegate
+
+- (CGFloat)tableViewCell:(JLYTableViewCell *)tableViewCell heightForRow:(NSInteger)row
+{
+    return 20.0;
 }
 
 

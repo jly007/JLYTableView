@@ -14,7 +14,7 @@
 		96E2B9001B36E47B0005AFA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E2B8FF1B36E47B0005AFA2 /* Images.xcassets */; };
 		96E2B9031B36E47B0005AFA2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E2B9011B36E47B0005AFA2 /* LaunchScreen.xib */; };
 		96E2B90F1B36E47B0005AFA2 /* JLYTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E2B90E1B36E47B0005AFA2 /* JLYTableViewDemoTests.m */; };
-		96E2B9291B36E5670005AFA2 /* datas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96E2B9281B36E5670005AFA2 /* datas.plist */; };
+		96E2B9291B36E5670005AFA2 /* dataSouce.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96E2B9281B36E5670005AFA2 /* dataSouce.plist */; };
 		96E2B9431B36E63C0005AFA2 /* JLYData.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E2B93A1B36E63C0005AFA2 /* JLYData.m */; };
 		96E2B9441B36E63C0005AFA2 /* JLYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E2B93C1B36E63C0005AFA2 /* JLYTableView.m */; };
 		96E2B9451B36E63C0005AFA2 /* JLYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E2B93E1B36E63C0005AFA2 /* JLYTableViewCell.m */; };
@@ -46,7 +46,7 @@
 		96E2B9081B36E47B0005AFA2 /* JLYTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLYTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E2B90D1B36E47B0005AFA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E2B90E1B36E47B0005AFA2 /* JLYTableViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLYTableViewDemoTests.m; sourceTree = "<group>"; };
-		96E2B9281B36E5670005AFA2 /* datas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = datas.plist; sourceTree = "<group>"; };
+		96E2B9281B36E5670005AFA2 /* dataSouce.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dataSouce.plist; sourceTree = "<group>"; };
 		96E2B9391B36E63C0005AFA2 /* JLYData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLYData.h; path = JLYTableViewDemo/JLYData.h; sourceTree = "<group>"; };
 		96E2B93A1B36E63C0005AFA2 /* JLYData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLYData.m; path = JLYTableViewDemo/JLYData.m; sourceTree = "<group>"; };
 		96E2B93B1B36E63C0005AFA2 /* JLYTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLYTableView.h; path = JLYTableViewDemo/JLYTableView.h; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 		96E2B8F21B36E47B0005AFA2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				96E2B9281B36E5670005AFA2 /* datas.plist */,
+				96E2B9281B36E5670005AFA2 /* dataSouce.plist */,
 				96E2B8F31B36E47B0005AFA2 /* Info.plist */,
 				96E2B8F41B36E47B0005AFA2 /* main.m */,
 			);
@@ -238,7 +238,7 @@
 			files = (
 				96E2B8FE1B36E47B0005AFA2 /* Main.storyboard in Resources */,
 				96E2B9031B36E47B0005AFA2 /* LaunchScreen.xib in Resources */,
-				96E2B9291B36E5670005AFA2 /* datas.plist in Resources */,
+				96E2B9291B36E5670005AFA2 /* dataSouce.plist in Resources */,
 				96E2B9001B36E47B0005AFA2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +459,7 @@
 				96E2B9141B36E47B0005AFA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96E2B9151B36E47B0005AFA2 /* Build configuration list for PBXNativeTarget "JLYTableViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +468,7 @@
 				96E2B9171B36E47B0005AFA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

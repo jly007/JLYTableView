@@ -28,7 +28,10 @@ typedef NS_ENUM(NSInteger, JLYTableViewCellMode)
 // return text for each cell
 - (NSString *)tableViewCell:(JLYTableViewCell *)tableViewCell textForColumn:(NSInteger)column inRow:(NSInteger)row;
 
-@optional
+// return  NSString *actions[row][col] == sNoAction
+- (BOOL)tableViewCell:(JLYTableViewCell *)tableViewCell addActionForColumn:(NSInteger)column inRow:(NSInteger)row;
+
+//@optional
 
 // return height of row
 - (CGFloat)tableViewCell:(JLYTableViewCell *)tableViewCell heightForRow:(NSInteger)row;
@@ -47,9 +50,6 @@ typedef NS_ENUM(NSInteger, JLYTableViewCellMode)
 
 // return font of text
 - (UIFont *)tableViewCell:(JLYTableViewCell *)tableViewCell fontOfColumn:(NSInteger)column;
-
-// return  NSString *actions[row][col] == sNoAction
-- (BOOL)tableViewCell:(JLYTableViewCell *)tableViewCell addActionForColumn:(NSInteger)column inRow:(NSInteger)row;
 
 // tap a cell
 - (void)tableViewCell:(JLYTableViewCell *)tableViewCell didSelectColumn:(NSInteger)column inRow:(NSInteger)row;
