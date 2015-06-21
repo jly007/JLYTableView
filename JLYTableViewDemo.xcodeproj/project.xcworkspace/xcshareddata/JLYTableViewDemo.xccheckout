@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AD58F19E-13E1-419C-94CD-0B97DF3F3621</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JLYTableViewDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>75CB316276305EC17E79C818A1D9A28D4903146E</key>
+		<string>https://github.com/jly007/JLYTableView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JLYTableViewDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>75CB316276305EC17E79C818A1D9A28D4903146E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jly007/JLYTableView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>75CB316276305EC17E79C818A1D9A28D4903146E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>75CB316276305EC17E79C818A1D9A28D4903146E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JLYTableViewDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

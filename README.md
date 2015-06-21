@@ -10,6 +10,7 @@ JLYTableView
 # Usage 
 ```objc
 - (void)viewDidLoad {
+<<<<<<< Updated upstream
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
@@ -34,10 +35,39 @@ JLYTableView
     [self.view addSubview:jlyTableView];
 
 }
+=======
+[super viewDidLoad];
+// Do any additional setup after loading the view, typically from a nib.
+
+self.title = @"My AccountBook";
+self.view.backgroundColor = [UIColor whiteColor];
+
+float width = self.view.frame.size.width / 4;
+NSArray *widths = @[@(width), @(width), @(width), @(width)];
+CGPoint startPoint = CGPointMake(0, 0);
+
+JLYTableView *jlyTableView = [[JLYTableView alloc] initWithFrame:self.view.bounds];
+[jlyTableView startWithWidths:widths
+startPoint:startPoint
+plistFile:@"datas"];
+
+NSArray *actions = @[sNoAction, @"printTotalAssets:", sNoAction, sNoAction];
+[jlyTableView setActions:actions WithTarget:self];
+
+NSArray *titles = @[@"Date", @"TotalAssets", @"Profit&Loss", @"Rate"];
+[jlyTableView setHeaderViewWithTitle:titles height:24];
+
+[self.view addSubview:jlyTableView];
+>>>>>>> Stashed changes
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)didReceiveMemoryWarning {
+[super didReceiveMemoryWarning];
+// Dispose of any resources that can be recreated.
 }
 
 - (void)printDate:(UIButton *)sender
