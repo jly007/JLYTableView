@@ -50,7 +50,6 @@
 // return alignment of headerView text
 - (NSTextAlignment)tableHeaderViewAlignment:(JLYTableViewCell *)headerView;
 
-
 @end
 
 @interface JLYTableView : UIView
