@@ -1,9 +1,10 @@
 JLYTableView
 ============
 
-* JLYTalbeView is a multi-column table view based on UITableView.
-* It is supports plist data.
-* It provides your own implementation for selection on each cell.
+* JLYTalbeView is a powerful implementation based on UITableView.
+* It provides some interesting features, such as：multi-column display.
+* Users can customize the tap event with each cell. 
+* Special thanks to my friends. 
 
 ![image](https://github.com/jly007/JLYTableView/blob/master/ScreemShot/ScreemShot.png)
 
