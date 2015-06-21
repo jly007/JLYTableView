@@ -24,7 +24,7 @@ As simple as
 @end
 ```
 
-## API
+### API
 init JLYTableView
 
 ```objc
@@ -53,7 +53,7 @@ init JLYTableView
 }
 ```
 
-## Actions
+### Actions
 customize your own API for tap event of each cell
 
 ```objc
@@ -71,7 +71,7 @@ customize your own API for tap event of each cell
 
 
 
-## JLYTableViewDelegate
+### JLYTableViewDelegate
 
 ```objc
 @protocol JLYTableViewDelegate <NSObject>
