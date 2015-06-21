@@ -14,6 +14,12 @@
 		96E2B9001B36E47B0005AFA2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E2B8FF1B36E47B0005AFA2 /* Images.xcassets */; };
 		96E2B9031B36E47B0005AFA2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E2B9011B36E47B0005AFA2 /* LaunchScreen.xib */; };
 		96E2B90F1B36E47B0005AFA2 /* JLYTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E2B90E1B36E47B0005AFA2 /* JLYTableViewDemoTests.m */; };
+		96E2B9291B36E5670005AFA2 /* datas.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96E2B9281B36E5670005AFA2 /* datas.plist */; };
+		96E2B9431B36E63C0005AFA2 /* JLYData.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E2B93A1B36E63C0005AFA2 /* JLYData.m */; };
+		96E2B9441B36E63C0005AFA2 /* JLYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E2B93C1B36E63C0005AFA2 /* JLYTableView.m */; };
+		96E2B9451B36E63C0005AFA2 /* JLYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E2B93E1B36E63C0005AFA2 /* JLYTableViewCell.m */; };
+		96E2B9461B36E63C0005AFA2 /* JLYTableViewGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E2B9401B36E63C0005AFA2 /* JLYTableViewGlobals.m */; };
+		96E2B9471B36E63C0005AFA2 /* NSString+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E2B9421B36E63C0005AFA2 /* NSString+Number.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,17 @@
 		96E2B9081B36E47B0005AFA2 /* JLYTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JLYTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E2B90D1B36E47B0005AFA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E2B90E1B36E47B0005AFA2 /* JLYTableViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLYTableViewDemoTests.m; sourceTree = "<group>"; };
+		96E2B9281B36E5670005AFA2 /* datas.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = datas.plist; sourceTree = "<group>"; };
+		96E2B9391B36E63C0005AFA2 /* JLYData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLYData.h; path = JLYTableViewDemo/JLYData.h; sourceTree = "<group>"; };
+		96E2B93A1B36E63C0005AFA2 /* JLYData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLYData.m; path = JLYTableViewDemo/JLYData.m; sourceTree = "<group>"; };
+		96E2B93B1B36E63C0005AFA2 /* JLYTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLYTableView.h; path = JLYTableViewDemo/JLYTableView.h; sourceTree = "<group>"; };
+		96E2B93C1B36E63C0005AFA2 /* JLYTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLYTableView.m; path = JLYTableViewDemo/JLYTableView.m; sourceTree = "<group>"; };
+		96E2B93D1B36E63C0005AFA2 /* JLYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLYTableViewCell.h; path = JLYTableViewDemo/JLYTableViewCell.h; sourceTree = "<group>"; };
+		96E2B93E1B36E63C0005AFA2 /* JLYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLYTableViewCell.m; path = JLYTableViewDemo/JLYTableViewCell.m; sourceTree = "<group>"; };
+		96E2B93F1B36E63C0005AFA2 /* JLYTableViewGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLYTableViewGlobals.h; path = JLYTableViewDemo/JLYTableViewGlobals.h; sourceTree = "<group>"; };
+		96E2B9401B36E63C0005AFA2 /* JLYTableViewGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLYTableViewGlobals.m; path = JLYTableViewDemo/JLYTableViewGlobals.m; sourceTree = "<group>"; };
+		96E2B9411B36E63C0005AFA2 /* NSString+Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Number.h"; path = "JLYTableViewDemo/NSString+Number.h"; sourceTree = "<group>"; };
+		96E2B9421B36E63C0005AFA2 /* NSString+Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Number.m"; path = "JLYTableViewDemo/NSString+Number.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +98,7 @@
 		96E2B8F11B36E47B0005AFA2 /* JLYTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				96E2B9181B36E48C0005AFA2 /* JLYTableView */,
 				96E2B8F61B36E47B0005AFA2 /* AppDelegate.h */,
 				96E2B8F71B36E47B0005AFA2 /* AppDelegate.m */,
 				96E2B8F91B36E47B0005AFA2 /* ViewController.h */,
@@ -96,6 +114,7 @@
 		96E2B8F21B36E47B0005AFA2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				96E2B9281B36E5670005AFA2 /* datas.plist */,
 				96E2B8F31B36E47B0005AFA2 /* Info.plist */,
 				96E2B8F41B36E47B0005AFA2 /* main.m */,
 			);
@@ -117,6 +136,24 @@
 				96E2B90D1B36E47B0005AFA2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96E2B9181B36E48C0005AFA2 /* JLYTableView */ = {
+			isa = PBXGroup;
+			children = (
+				96E2B93F1B36E63C0005AFA2 /* JLYTableViewGlobals.h */,
+				96E2B9401B36E63C0005AFA2 /* JLYTableViewGlobals.m */,
+				96E2B9411B36E63C0005AFA2 /* NSString+Number.h */,
+				96E2B9421B36E63C0005AFA2 /* NSString+Number.m */,
+				96E2B9391B36E63C0005AFA2 /* JLYData.h */,
+				96E2B93A1B36E63C0005AFA2 /* JLYData.m */,
+				96E2B93D1B36E63C0005AFA2 /* JLYTableViewCell.h */,
+				96E2B93E1B36E63C0005AFA2 /* JLYTableViewCell.m */,
+				96E2B93B1B36E63C0005AFA2 /* JLYTableView.h */,
+				96E2B93C1B36E63C0005AFA2 /* JLYTableView.m */,
+			);
+			name = JLYTableView;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +238,7 @@
 			files = (
 				96E2B8FE1B36E47B0005AFA2 /* Main.storyboard in Resources */,
 				96E2B9031B36E47B0005AFA2 /* LaunchScreen.xib in Resources */,
+				96E2B9291B36E5670005AFA2 /* datas.plist in Resources */,
 				96E2B9001B36E47B0005AFA2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +257,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96E2B9471B36E63C0005AFA2 /* NSString+Number.m in Sources */,
+				96E2B9461B36E63C0005AFA2 /* JLYTableViewGlobals.m in Sources */,
+				96E2B9441B36E63C0005AFA2 /* JLYTableView.m in Sources */,
+				96E2B9451B36E63C0005AFA2 /* JLYTableViewCell.m in Sources */,
 				96E2B8FB1B36E47B0005AFA2 /* ViewController.m in Sources */,
+				96E2B9431B36E63C0005AFA2 /* JLYData.m in Sources */,
 				96E2B8F81B36E47B0005AFA2 /* AppDelegate.m in Sources */,
 				96E2B8F51B36E47B0005AFA2 /* main.m in Sources */,
 			);
