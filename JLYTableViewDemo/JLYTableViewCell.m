@@ -28,10 +28,6 @@
     if ([self.delegate respondsToSelector:@selector(tableViewCell:columnsInRow:)]) {
         columnCount = [self.delegate tableViewCell:self columnsInRow:rowIndex];
     }
-    else
-    {
-        NSLog(@"warning");
-    }
     
     /**
      *  Height
@@ -59,10 +55,6 @@
         if ([self.delegate respondsToSelector:@selector(tableViewCell:widthForColumn:)]) {
             width = [self.delegate tableViewCell:self widthForColumn:i];
         }
-        else
-        {
-            NSLog(@"warning!");
-        }
         
         /**
          *  Action
@@ -86,10 +78,7 @@
             UIColor *bgColor = [self.delegate tableViewCell:self colorOfColumn:i inRow:rowIndex];
 
         }
-        else
-        {
-            
-        }
+        
         //[btn setBackgroundImage:backImage forState:UIControlStateNormal];
         //[btn setBackgroundImage:[backImage imageByApplyingAlpha:0.4] forState:UIControlStateHighlighted];
         
@@ -102,16 +91,7 @@
         if ([self.delegate respondsToSelector:@selector(tableViewCell:contentColorOfColumn:inRow:)]) {
             titleColor = [self.delegate tableViewCell:self contentColorOfColumn:i inRow:rowIndex];
         }
-        else
-        {
-            if (action) {
-                titleColor = [self colorWithHexString:@"3e98b5"];
-            }
-            else
-            {
-                titleColor = [UIColor colorWithRed:75/255.f green:55/255.f blue:39/255.f alpha:1.0];
-            }
-        }
+        
         [btn setTitleColor:titleColor forState:UIControlStateNormal];
         [btn setTitleColor:[titleColor colorWithAlphaComponent:0.4f] forState:UIControlStateHighlighted];
         
@@ -124,10 +104,7 @@
         if ([self.delegate respondsToSelector:@selector(tableViewCell:textForColumn:inRow:)]) {
             text = [self.delegate tableViewCell:self textForColumn:i inRow:rowIndex];
         }
-        else
-        {
-            text = @"nil";
-        }
+        
         [btn setTitle:text forState:UIControlStateNormal];
         
         /**
@@ -138,10 +115,7 @@
         if ([self.delegate respondsToSelector:@selector(tableViewCell:fontOfColumn:)]) {
             font = [self.delegate tableViewCell:self fontOfColumn:i];
         }
-        else
-        {
-            font = [UIFont systemFontOfSize:12];
-        }
+        
         [btn.titleLabel setFont:font];
         
         //NSLog(@"col:%ld, row:%ld, font:%@", (long)i, (long)rowIndex, [font fontName]);
@@ -171,10 +145,7 @@
         if ([self.delegate respondsToSelector:@selector(tableViewCellBorderWidth:)]) {
             bordeWidth = [self.delegate tableViewCellBorderWidth:self];
         }
-        else
-        {
-            bordeWidth = 0.5;
-        }
+        
         [btn.layer setBorderWidth:bordeWidth];
         
         /**
@@ -184,10 +155,6 @@
         
         if ([self.delegate respondsToSelector:@selector(tableViewCellBorderColor:)]) {
             borderColor = [self.delegate tableViewCellBorderColor:self];
-        }
-        else
-        {
-            borderColor = [UIColor colorWithWhite:0.9 alpha:1.000];
         }
         
         [btn.layer setBorderColor:borderColor.CGColor];
@@ -261,11 +228,7 @@
         if ([self.delegate respondsToSelector:@selector(tableHeaderView:contentColorOfColumn:)]) {
             titleColor = [self.delegate tableHeaderView:self contentColorOfColumn:i];
         }
-        else
-        {
-            titleColor = [UIColor colorWithRed:75/255.f green:55/255.f blue:39/255.f alpha:1.0];
-            
-        }
+        
         [label setTextColor:titleColor];
         
         /**
@@ -275,10 +238,7 @@
         if ([self.delegate respondsToSelector:@selector(tableHeaderView:colorOfColumn:)]) {
             bgColor = [self.delegate tableHeaderView:self colorOfColumn:i];
         }
-        else
-        {
-            bgColor = [UIColor colorWithRed:239/255.0 green:244/255.0 blue:254/255.0 alpha:1.0];
-        }
+
         [label setBackgroundColor:bgColor];
         
         /**
@@ -289,10 +249,7 @@
         if ([self.delegate respondsToSelector:@selector(tableHeaderView:fontOfColumn:)]) {
             font = [self.delegate tableHeaderView:self fontOfColumn:i];
         }
-        else
-        {
-            font = [UIFont systemFontOfSize:14];
-        }
+
         label.font = font;
         
         /**
@@ -301,11 +258,6 @@
         if ([self.delegate respondsToSelector:@selector(tableHeaderViewAlignment:)]) {
             label.textAlignment = [self.delegate tableHeaderViewAlignment:self];
         }
-        else
-        {
-            label.textAlignment = NSTextAlignmentCenter;
-        }
-        
 
         /**
          *  Border Width
@@ -330,10 +282,7 @@
         if ([self.delegate respondsToSelector:@selector(tableHeaderViewBorderColor:)]) {
             borderColor = [self.delegate tableHeaderViewBorderColor:self];
         }
-        else
-        {
-            borderColor = [UIColor colorWithWhite:0.9 alpha:1.000];
-        }
+        
         [label.layer setBorderColor:borderColor.CGColor];
         
         [self addSubview:label];
