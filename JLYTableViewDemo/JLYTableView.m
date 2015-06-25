@@ -287,7 +287,14 @@
             
             [self.delegate performSelector:sel withObject:btn];
         }
+        
+        //UIColor *borderColor = [UIColor redColor];
+        //[btn.layer setBorderColor:borderColor.CGColor];
+        //[btn.layer setBorderWidth:2.0];
     }
+
+    
+
 }
 
 - (UIColor *)tableHeaderViewBorderColor:(JLYTableViewCell *)headerView
